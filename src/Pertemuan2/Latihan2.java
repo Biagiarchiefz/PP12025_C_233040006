@@ -15,7 +15,7 @@ public class Latihan2 {
         // Menampilkan node n1 dan n2 dengan Pointer p
         Node p = n1;
         while (p != null) {
-            System.out.println("%d" + p.getNilai());
+            System.out.printf("%d ",p.getNilai());
             p = p.getNext();
         }
     }
