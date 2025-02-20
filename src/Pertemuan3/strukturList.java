@@ -1,52 +1,54 @@
 package Pertemuan3;
 
+import java.awt.*;
+
 public class strukturList {
-    private Node HEAD;
+    private Node Head;
+
     public strukturList () {
-        this.HEAD = null;
+        this.Head = null;
     }
+
     public boolean isEmpty () {
-        return HEAD == null;
+        return Head == null;
     }
-    public void addTail (int data)
-    {
-        Node posNode=null, curNode=null;
 
-        Node newNode = new Node (data);
-        if (isEmpty())
-        {
-            HEAD = newNode;
-        }
-        else
-        {
-            curNode = HEAD;
-            while (curNode != null)
-            {
+
+    public void addTail(int data) {
+        Node posNode = null, curNode = null;
+
+        Node newnode = new Node(data);
+        if (isEmpty()) {
+            Head = newnode;
+        } else {
+            curNode = Head;
+            while (curNode != null ) {
                 posNode = curNode;
-                curNode = curNode.getnext();
+                curNode = curNode.getNext();
+
             }
-            posNode.setnext(newNode);
+            posNode.setNext(newnode);
         }
     }
-
 
     public void addHead (int data) {
         Node newNode = new Node(data);
         if (isEmpty()) {
-            HEAD = newNode;
-        }
-        else {
-            newNode.setnext(HEAD);
-            HEAD = newNode;
+            Head = newNode;
+
+        } else {
+            newNode.setNext(Head);
+            Head = newNode;
         }
     }
 
-
-    public void displayElement() {
-        Node curNode = HEAD;
-        while (curNode != null) {
-            System.out.print(curNode.getdata()+ " ");
-            curNode = curNode.getnext();		}
+    public void diplayElement() {
+        Node curNode =  Head;
+        while (curNode != null ) {
+            System.out.print(curNode.getData() + " ");
+            curNode = curNode.getNext();
+        }
     }
+
 
 }
