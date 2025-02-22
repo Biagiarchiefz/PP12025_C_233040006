@@ -1,7 +1,5 @@
 package Pertemuan3;
 
-import java.awt.*;
-
 public class strukturList {
     private Node Head;
 
@@ -9,7 +7,7 @@ public class strukturList {
         this.Head = null;
     }
 
-    public boolean isEmpty () {
+    public boolean isEmpty ()   {
         return Head == null;
     }
 
