@@ -14,18 +14,20 @@ public class strukturListTest {
         System.out.print("Element = ");
         list.displayElement();
 
-        System.out.println("\n");
 
-        strukturList listA = new strukturList();
-        listA.addTail(1);
-        listA.addTail(5);
-        listA.addMid(4, 2);
-        listA.addMid(4, 2);
-        listA.addMid(3, 2);
-        listA.addHead(2);
-
-        System.out.print("Element = ");
-        listA.displayElement();
+//
+//        System.out.println("\n");
+//
+//        strukturList listA = new strukturList();
+//        listA.addTail(1);
+//        listA.addTail(5);
+//        listA.addMid(4, 2);
+//        listA.addMid(4, 2);
+//        listA.addMid(3, 2);
+//        listA.addHead(2);
+//
+//        System.out.print("Element = ");
+//        listA.displayElement();
 
 
 
